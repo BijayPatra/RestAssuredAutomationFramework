@@ -1,6 +1,6 @@
 package api.endpoints;
 
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
 
 import api.payload.user;
 import io.restassured.http.ContentType;

@@ -28,3 +28,21 @@
 [INFO ] 2023-08-29 18:02:37.242 [main] RestAssuredAutomationFramework_test - Get User Data executed.
 [INFO ] 2023-08-29 18:02:39.516 [main] RestAssuredAutomationFramework_test - Update User executed.
 [INFO ] 2023-08-29 18:02:40.672 [main] RestAssuredAutomationFramework_test - Delete User executed.
+[INFO ] 2024-10-31 01:25:21.201 [main] RestAssuredAutomationFramework_test - Create User executed.
+[INFO ] 2024-10-31 01:25:22.752 [main] RestAssuredAutomationFramework_test - Get User Data executed.
+[INFO ] 2024-10-31 01:25:25.774 [main] RestAssuredAutomationFramework_test - Update User executed.
+[INFO ] 2024-10-31 01:25:27.260 [main] RestAssuredAutomationFramework_test - Delete User executed.
+[INFO ] 2024-10-31 01:27:24.856 [main] RestAssuredAutomationFramework_test - Create User executed.
+[INFO ] 2024-10-31 01:27:26.374 [main] RestAssuredAutomationFramework_test - Get User Data executed.
+[INFO ] 2024-10-31 01:27:29.373 [main] RestAssuredAutomationFramework_test - Update User executed.
+[INFO ] 2024-10-31 01:27:30.902 [main] RestAssuredAutomationFramework_test - Delete User executed.
+[INFO ] 2024-10-31 01:42:32.059 [main] RestAssuredAutomationFramework_test - Create User executed.
+[INFO ] 2024-10-31 01:42:33.655 [main] RestAssuredAutomationFramework_test - Get User Data executed.
+[INFO ] 2024-10-31 01:44:06.398 [main] RestAssuredAutomationFramework_test - Create User executed.
+[INFO ] 2024-10-31 01:44:07.977 [main] RestAssuredAutomationFramework_test - Get User Data executed.
+[INFO ] 2024-10-31 01:44:10.967 [main] RestAssuredAutomationFramework_test - Update User executed.
+[INFO ] 2024-10-31 01:44:12.458 [main] RestAssuredAutomationFramework_test - Delete User executed.
+[INFO ] 2024-10-31 01:49:34.385 [main] RestAssuredAutomationFramework_test - Create User executed.
+[INFO ] 2024-10-31 01:49:35.927 [main] RestAssuredAutomationFramework_test - Get User Data executed.
+[INFO ] 2024-10-31 01:49:38.944 [main] RestAssuredAutomationFramework_test - Update User executed.
+[INFO ] 2024-10-31 01:49:40.439 [main] RestAssuredAutomationFramework_test - Delete User executed.

@@ -31,10 +31,7 @@ public class UserTest {
 		userPayload.setEmail(faker.internet().safeEmailAddress());
 		userPayload.setPassword(faker.internet().password(5, 10));
 		userPayload.setPhone(faker.phoneNumber().cellPhone());
-
-
 		//obtain logger
-
 		logger = LogManager.getLogger("RestAssuredAutomationFramework_test");
 	}
 
@@ -46,15 +43,12 @@ public class UserTest {
 		//log response
 		response.then().log().all();
 
-
 		//validation
 		Assert.assertEquals(response.getStatusCode(),200);
 
 		//log
 		logger.info("Create User executed.");
 	}
-
-
 	@Test(priority=2)
 	public void testGetUserData()
 	{
@@ -63,7 +57,6 @@ public class UserTest {
 		System.out.println("Read User Data.");
 		//log response
 		response.then().log().all();
-
 
 		//validation
 		Assert.assertEquals(response.getStatusCode(),200);
@@ -78,10 +71,8 @@ public class UserTest {
 		userPayload.setFirstName(faker.name().firstName());
 		Response response = userEndPoints.UpdateUser(this.userPayload.getUsername(),userPayload);
 
-
 		//log response
 		response.then().log().all();
-
 
 		//validation
 		Assert.assertEquals(response.getStatusCode(),200);
@@ -110,14 +101,10 @@ public class UserTest {
 		//log response
 		response.then().log().all();
 
-
 		//validation
 		Assert.assertEquals(response.getStatusCode(),200);
-
 		
 		//log
 				logger.info("Delete User executed.");
-
-
 	}
 }

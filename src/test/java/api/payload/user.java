@@ -8,8 +8,8 @@ public class user {
 	  String firstName;
 	  String lastName;
 	  String email;
-	 String password;
-	 String phone;
+	  String password;
+	  String phone;
 	  int userStatus=0;
 	  
 	  
@@ -61,7 +61,4 @@ public class user {
 	public void setUserStatus(int userStatus) {
 		this.userStatus = userStatus;
 	}
-	  
-	  
-
 }
