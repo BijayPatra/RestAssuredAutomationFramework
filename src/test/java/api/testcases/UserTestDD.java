@@ -37,6 +37,23 @@ public class UserTestDD {
 		Assert.assertEquals(response.getStatusCode(),200);
 	}
 
+	@Test(priority=2,dataProvider = "UserNamesData", dataProviderClass = DataProviders.class)
+	public void testGetUserData(String username)
+	{
+
+		Response response = userEndPoints.GetUser(username);
+
+		//System.out.println("Get User Data.");
+
+		//log response
+		response.then().log().all();
+
+
+		//validation
+		Assert.assertEquals(response.getStatusCode(),200);
+
+
+	}
 	@Test(priority=3,dataProvider = "UserNamesData", dataProviderClass = DataProviders.class)
 	public void testDeleteUser(String username)
 	{
@@ -56,21 +73,4 @@ public class UserTestDD {
 
 	}
 
-	@Test(priority=2,dataProvider = "UserNamesData", dataProviderClass = DataProviders.class)
-	public void testGetUserData(String username)
-	{
-
-		Response response = userEndPoints.GetUser(username);
-
-		//System.out.println("Get User Data.");
-
-		//log response
-		response.then().log().all();
-
-
-		//validation
-		Assert.assertEquals(response.getStatusCode(),200);
-
-
-	}
 }
