@@ -12,8 +12,6 @@ import io.restassured.response.Response;
 
 public class UserTestDD {
 
-
-	
 	@Test(priority=1,dataProvider = "AllData", dataProviderClass = DataProviders.class)
 	public void testCreateUser(String userId, String UserName, String fname, String lname, String email, String pwd, String phone)
 	{
