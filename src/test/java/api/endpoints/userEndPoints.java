@@ -6,25 +6,23 @@ import api.payload.user;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-
-public class userEndPoints {
-
-	
+//userEndPoints.java
+//Created for perform Create,Read,Update and Delete request the user API.	
+public class userEndPoints 
+{
 	public static Response createUser(user payload)
 	{
 		Response response = given()
+				//below content type mentioned in swagger doc.  
 		.accept(ContentType.JSON)
 		.contentType(ContentType.JSON)
 		.body(payload)
-		
-		
+
 		.when()
-		.post(Routes.post_url);
+			.post(Routes.post_url);
 		
 		return response;
-	}
-	
-	
+	}	
 	public static Response GetUser(String userName)
 	{
 		Response response = given()
@@ -32,12 +30,10 @@ public class userEndPoints {
 		.pathParam("username", userName)
 		
 		.when()
-		.get(Routes.get_url);
+			.get(Routes.get_url);
 		
 		return response;
 	}
-	
-	
 	public static Response UpdateUser(String userName, user payload)
 	{
 		Response response = given()
@@ -46,23 +42,20 @@ public class userEndPoints {
 		.pathParam("username", userName)
 		.body(payload)
 		
-		
 		.when()
-		.put(Routes.put_url);
+			.put(Routes.put_url);
 		
 		return response;
 	}
-	
 	
 	public static Response DeleteUser(String userName)
 	{
 		Response response = given()
 		.accept(ContentType.JSON)
 		.pathParam("username", userName)
-			
 		
 		.when()
-		.delete(Routes.del_url);
+			.delete(Routes.del_url);
 		
 		return response;
 	}

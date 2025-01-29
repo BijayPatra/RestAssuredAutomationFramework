@@ -41,6 +41,7 @@ public class UserTest {
 	@Test(priority=1)
 	public void testCreateUser()
 	{
+		logger.info("****************Creating User***********");
 		Response response = userEndPoints.createUser(userPayload);
 
 		//log response
@@ -51,13 +52,14 @@ public class UserTest {
 		Assert.assertEquals(response.getStatusCode(),200);
 
 		//log
-		logger.info("Create User executed.");
+		logger.info("******************User Created***************");
 	}
 
 
 	@Test(priority=2)
 	public void testGetUserData()
 	{
+		logger.info("**************Getting userdata********************");
 		Response response = userEndPoints.GetUser(this.userPayload.getUsername());
 
 		System.out.println("Read User Data.");
@@ -69,24 +71,30 @@ public class UserTest {
 		Assert.assertEquals(response.getStatusCode(),200);
 
 		//log
-		logger.info("Get User Data executed.");
+		logger.info("**************Getting userdata completed********************");
 	}
 
 	@Test(priority=3)
 	public void testUpdateUser()
 	{
+		//update data using payload
+		//going to update below data using the existing payload getUsername.
+		
+		logger.info("***********************Updating User****************");
 		userPayload.setFirstName(faker.name().firstName());
+		userPayload.setLastName(faker.name().lastName());
+		userPayload.setEmail(faker.internet().safeEmailAddress());
+		
 		Response response = userEndPoints.UpdateUser(this.userPayload.getUsername(),userPayload);
 
 
 		//log response
 		response.then().log().all();
 
-
 		//validation
 		Assert.assertEquals(response.getStatusCode(),200);
 
-		//Read User data to check if first name is updated 
+		//Read User data to CHECK if firstName,lastName and EmailAddress is updated or not 
 
 		Response responsePostUpdate = userEndPoints.GetUser(this.userPayload.getUsername());
 
@@ -95,7 +103,7 @@ public class UserTest {
 		responsePostUpdate.then().log().all();
 
 		//log
-		logger.info("Update User executed.");
+		logger.info("***********************Updating User completed****************");
 
 	}
 
@@ -103,6 +111,7 @@ public class UserTest {
 	public void testDeleteUser()
 	{
 
+		logger.info("***********************Deleting user****************");
 		Response response = userEndPoints.DeleteUser(this.userPayload.getUsername());
 
 		System.out.println("Delete User Data.");
@@ -116,7 +125,7 @@ public class UserTest {
 
 		
 		//log
-				logger.info("Delete User executed.");
+		logger.info("***********************Deleting User Completed****************");
 
 
 	}

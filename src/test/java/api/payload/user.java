@@ -3,13 +3,25 @@ package api.payload;
 public class user {
 //POJO - Plain old Java Object
 	
+/*
+ * {
+  "id": 0,
+  "username": "string",
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "password": "string",
+  "phone": "string",
+  "userStatus": 0
+}	 
+ */
 	  int id;
 	  String username;
 	  String firstName;
 	  String lastName;
 	  String email;
-	 String password;
-	 String phone;
+	  String password;
+	  String phone;
 	  int userStatus=0;
 	  
 	  

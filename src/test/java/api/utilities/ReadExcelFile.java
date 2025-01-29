@@ -1,6 +1,7 @@
 package api.utilities;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -11,6 +12,7 @@ public class ReadExcelFile {
 
 
 	public static FileInputStream inputStream;
+	public static FileOutputStream outputStream;
 	public static XSSFWorkbook workBook;
 	public static XSSFSheet excelSheet;
 	public static XSSFRow row;

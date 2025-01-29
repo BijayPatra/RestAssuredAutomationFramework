@@ -2,7 +2,8 @@ package api.endpoints;
 
 public class Routes {
 
-	/*Create User	POST	https://petstore.swagger.io/v2/user
+/*
+Create User	POST	https://petstore.swagger.io/v2/user
 Get User	GET	https://petstore.swagger.io/v2/user/{username}
 Update User	PUT	https://petstore.swagger.io/v2/user/{username}
 Delete User	DELETE	https://petstore.swagger.io/v2/user/{username}
@@ -19,9 +20,10 @@ public static String  del_url = base_url + "/user/{username}";
 
 //pet module urls
 
-
+		//You need to create pet module URL's here.
 
 //store module urls
-
+	
+	//you need to create srore module URL's  here.
 
 }
